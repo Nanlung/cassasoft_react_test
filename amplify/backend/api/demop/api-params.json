@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/ing",
+      "lambdaFunction": "delete",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/ing"
+    }
+  ],
+  "resourceName": "demop",
+  "apiName": "demop",
+  "functionArns": [
+    {
+      "lambdaFunction": "delete"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-demo2-dev-173625-authRole",
+    "unAuthRoleName": "amplify-demo2-dev-173625-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "delete",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
